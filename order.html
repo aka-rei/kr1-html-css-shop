@@ -8,6 +8,7 @@
       content="Форма заявки на светильник: имя, e-mail, телефон, модель и комментарий.">
     <title>Форма заявки | СВЕТ</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -35,19 +36,20 @@
     <main class="container">
       <h1 class="page-title">Оформление заявки</h1>
       <p class="page-description">Обязательные поля отмечены звёздочкой.</p>
-      <form class="order-form" action="order.html" method="get">
+      <form class="order-form" id="order-form" method="dialog">
         <p>Учебная форма без отправки заявки. Используйте вымышленные данные.</p>
         <div class="order-form__field">
           <label class="order-form__label" for="customer-name">Имя *</label>
-          <input class="order-form__input" type="text" id="customer-name" name="name" required>
+          <input class="order-form__input" type="text" id="customer-name" name="name" minlength="2" maxlength="50" pattern=".*\S.*" autocomplete="name" required>
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="customer-email">E-mail *</label>
-          <input class="order-form__input" type="email" id="customer-email" name="email" required>
+          <input class="order-form__input" type="email" id="customer-email" name="email" autocomplete="email" required>
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="customer-phone">Телефон *</label>
-          <input class="order-form__input" type="tel" id="customer-phone" name="phone" required>
+          <input class="order-form__input" type="tel" id="customer-phone" name="phone" inputmode="tel" pattern="\+7[0-9]{10}" placeholder="+79991234567" autocomplete="tel" aria-describedby="phone-hint" required>
+          <p class="order-form__hint" id="phone-hint">Формат: +7 и 10 цифр без пробелов.</p>
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="product">Товар *</label>
@@ -60,12 +62,13 @@
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="comment">Комментарий</label>
-          <textarea class="order-form__input" id="comment" name="comment"></textarea>
+          <textarea class="order-form__input" id="comment" name="comment" rows="4" maxlength="300"></textarea>
         </div>
         <div class="order-form__consent">
           <input type="checkbox" id="consent" name="consent" value="yes" required>
           <label for="consent">Согласен на обработку данных *</label>
         </div>
+        <p class="form-message" id="form-message" role="status" tabindex="-1" hidden>Учебная заявка проверена. Данные не отправлялись.</p>
         <button class="button" type="submit">Отправить заявку</button>
       </form>
     </main>
