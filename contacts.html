@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Контактная информация учебного магазина СВЕТ и ссылка на форму заявки.">
+    <title>Контакты | СВЕТ</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html">СВЕТ</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav__link" href="product.html">Товары</a></li>
+            <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+            <li>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="contacts.html"
+                aria-current="page"
+              >
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Контакты</h1>
+      <p class="page-description">Контактная информация магазина.</p>
+      <div class="contacts">
+        <section class="contacts__info" aria-labelledby="contacts-info-title">
+          <h2 id="contacts-info-title">Связаться с нами</h2>
+          <address>
+            <p>
+              <strong>E-mail:</strong>
+              <br>
+              <a href="mailto:hello@svet.example">hello@svet.example</a>
+            </p>
+            <p>
+              <strong>Телефон:</strong>
+              <br>
+              +7 (000) 000-00-00
+            </p>
+          </address>
+          <p class="contacts__note">Контакты приведены для учебного примера.</p>
+        </section>
+        <section aria-labelledby="feedback-title">
+          <h2 id="feedback-title">Обратная связь</h2>
+          <p>Оставьте вопрос о товаре в форме заявки.</p>
+          <a class="button" href="order.html">Открыть форму</a>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>2026 СВЕТ — учебный проект</p>
+        <nav class="site-footer__links" aria-label="Разделы главной страницы">
+          <a href="index.html#advantages">Преимущества</a>
+          <a href="index.html#popular">Популярные товары</a>
+          <a href="index.html#contacts">Контакты</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

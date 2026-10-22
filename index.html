@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Магазин настольных светильников. Каталог, характеристики и форма заявки.">
+    <title>Главная | СВЕТ</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html">СВЕТ</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="index.html"
+                aria-current="page"
+              >
+                Главная
+              </a>
+            </li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav__link" href="product.html">Товары</a></li>
+            <li><a class="site-nav__link" href="order.html">Заявка</a></li>
+            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <h1 id="hero-title">Настольные светильники</h1>
+          <p class="hero__text">Лампы для рабочего стола, чтения и освещения комнаты.</p>
+          <a class="button" href="catalog.html">Открыть каталог</a>
+        </div>
+        <img
+          class="hero__image"
+          src="images/dome.webp"
+          alt="Зелёная настольная лампа рядом с книгами"
+          width="1536"
+          height="1024">
+      </section>
+      <section class="section" id="advantages" aria-labelledby="advantages-title">
+        <h2 class="section__title" id="advantages-title">Преимущества</h2>
+        <div class="advantages">
+          <div class="advantages__item">
+            <h3>Разные модели</h3>
+            <p>В каталоге есть лампы для работы и для дома.</p>
+          </div>
+          <div class="advantages__item">
+            <h3>Подробные характеристики</h3>
+            <p>Размеры, мощность и тип питания указаны на странице товаров.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="popular" aria-labelledby="popular-title">
+        <h2 class="section__title" id="popular-title">Популярные товары</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <img
+              class="product-card__image"
+              src="images/dome.webp"
+              alt="Зелёная настольная лампа"
+              width="900"
+              height="900">
+            <div class="product-card__body">
+              <h3 class="product-card__title">Купол</h3>
+              <p class="product-card__description">Лампа с широким абажуром и тёплым светом.</p>
+              <p class="product-card__price">8 900 ₽</p>
+              <a
+                class="button"
+                href="product.html#dome"
+                aria-label="Подробнее о лампе Купол"
+              >
+                Подробнее
+              </a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-card__image"
+              src="images/line.webp"
+              alt="Белая лампа с регулируемым плечом"
+              width="900"
+              height="900">
+            <span class="product-card__badge">Новинка</span>
+            <div class="product-card__body">
+              <h3 class="product-card__title">Линия</h3>
+              <p class="product-card__description">
+                Лампа с регулируемым плечом для рабочего стола.
+              </p>
+              <p class="product-card__price">6 400 ₽</p>
+              <a
+                class="button"
+                href="product.html#line"
+                aria-label="Подробнее о лампе Линия"
+              >
+                Подробнее
+              </a>
+            </div>
+          </article>
+          <article class="product-card">
+            <img
+              class="product-card__image"
+              src="images/point.webp"
+              alt="Графитовая настольная лампа"
+              width="900"
+              height="900">
+            <div class="product-card__body">
+              <h3 class="product-card__title">Точка</h3>
+              <p class="product-card__description">Компактная лампа с аккумулятором.</p>
+              <p class="product-card__price">4 700 ₽</p>
+              <a
+                class="button"
+                href="product.html#point"
+                aria-label="Подробнее о лампе Точка"
+              >
+                Подробнее
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="contacts" aria-labelledby="contacts-title">
+        <h2 class="section__title" id="contacts-title">Контакты</h2>
+        <p>По вопросам о светильниках можно заполнить форму заявки.</p>
+        <div class="section__links">
+          <a href="order.html">Оставить заявку</a>
+          <a href="contacts.html">Контактная информация</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>2026 СВЕТ — учебный проект</p>
+        <nav class="site-footer__links" aria-label="Разделы главной страницы">
+          <a href="index.html#advantages">Преимущества</a>
+          <a href="index.html#popular">Популярные товары</a>
+          <a href="index.html#contacts">Контакты</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

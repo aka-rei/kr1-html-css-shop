@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Форма заявки на светильник: имя, e-mail, телефон, модель и комментарий.">
+    <title>Форма заявки | СВЕТ</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html">СВЕТ</a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="index.html">Главная</a></li>
+            <li><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+            <li><a class="site-nav__link" href="product.html">Товары</a></li>
+            <li>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="order.html"
+                aria-current="page"
+              >
+                Заявка
+              </a>
+            </li>
+            <li><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <h1 class="page-title">Оформление заявки</h1>
+      <p class="page-description">Обязательные поля отмечены звёздочкой.</p>
+      <form class="order-form" action="order.html" method="get">
+        <p>Учебная форма без отправки заявки. Используйте вымышленные данные.</p>
+        <div class="order-form__field">
+          <label class="order-form__label" for="customer-name">Имя *</label>
+          <input class="order-form__input" type="text" id="customer-name" name="name" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="customer-email">E-mail *</label>
+          <input class="order-form__input" type="email" id="customer-email" name="email" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="customer-phone">Телефон *</label>
+          <input class="order-form__input" type="tel" id="customer-phone" name="phone" required>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="product">Товар *</label>
+          <select class="order-form__input" id="product" name="product" required>
+            <option value="">Выберите модель</option>
+            <option value="dome">Купол</option>
+            <option value="line">Линия</option>
+            <option value="point">Точка</option>
+          </select>
+        </div>
+        <div class="order-form__field">
+          <label class="order-form__label" for="comment">Комментарий</label>
+          <textarea class="order-form__input" id="comment" name="comment"></textarea>
+        </div>
+        <div class="order-form__consent">
+          <input type="checkbox" id="consent" name="consent" value="yes" required>
+          <label for="consent">Согласен на обработку данных *</label>
+        </div>
+        <button class="button" type="submit">Отправить заявку</button>
+      </form>
+    </main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>2026 СВЕТ — учебный проект</p>
+        <nav class="site-footer__links" aria-label="Разделы главной страницы">
+          <a href="index.html#advantages">Преимущества</a>
+          <a href="index.html#popular">Популярные товары</a>
+          <a href="index.html#contacts">Контакты</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
