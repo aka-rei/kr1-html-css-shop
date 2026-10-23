@@ -24,3 +24,10 @@ HTML5, CSS3, Flexbox, Grid, минимальный JavaScript.
 
 Сайт открывается через `index.html`, без установки и сборки.
 Форма учебная: данные не сохраняются и не отправляются. Фильтры — статический макет.
+
+## GitHub Pages
+
+Сайт: [aka-rei.github.io/kr1-html-css-shop](https://aka-rei.github.io/kr1-html-css-shop/).
+
+Публикация настроена из корня ветки `main`: **Settings → Pages → Deploy from a branch → main → / (root)**.
+После отправки изменений в `main` сайт обновляется автоматически. Файл `.nojekyll` отключает обработку Jekyll.
